@@ -123,8 +123,8 @@ class SaleOrderDetalisScreen extends StatelessWidget {
                                         datas[index],
                                         style: const TextStyle(
                                           fontFamily: "poppins",
-                                          fontWeight: FontWeight.w600,
-                                          fontSize: 16,
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: 15,
                                           color: Color(0xFF838383),
                                         ),
                                       ),
@@ -144,9 +144,9 @@ class SaleOrderDetalisScreen extends StatelessWidget {
                                     child: TextFormField(
                                       keyboardType: TextInputType.number,
                                     ),
-                                  )
+                                  ),
                                 ],
-                              )
+                              ),
                             ],
                           ),
                         ),
@@ -221,7 +221,9 @@ class SaleOrderDetalisScreen extends StatelessWidget {
                   width: 160,
                   height: 59,
                   decoration: BoxDecoration(
-                    color: const Color(0xFFffffff),
+                    color: const Color(
+                      0xFFFFFFFF,
+                    ),
                     borderRadius: BorderRadius.circular(6),
                   ),
                   child: const Center(
@@ -250,7 +252,7 @@ class SaleOrderDetalisScreen extends StatelessWidget {
                   ),
                   child: const Center(
                     child: Text(
-                      "Next",
+                      "Save",
                       style: TextStyle(
                         color: Color.fromARGB(255, 208, 205, 205),
                         fontFamily: "poppins",

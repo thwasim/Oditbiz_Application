@@ -64,8 +64,8 @@ class _SaleOrderFieldsState extends State<SaleOrderFields> {
               listPadding: ListPadding(top: 20),
               enableSearch: true,
               searchDecoration: const InputDecoration(
-                hintText: "Serach",
-                contentPadding: EdgeInsets.all(10),
+                hintText: "Search",
+                contentPadding: EdgeInsets.only(right: 17, left: 17, top: 17),
               ),
               // controller: cashAcountcontroller,
               validator: (value) {
@@ -128,8 +128,8 @@ class _SaleOrderFieldsState extends State<SaleOrderFields> {
               listPadding: ListPadding(top: 20),
               enableSearch: true,
               searchDecoration: const InputDecoration(
-                hintText: "Serach",
-                contentPadding: EdgeInsets.all(10),
+                hintText: "Search",
+                contentPadding: EdgeInsets.only(right: 17, left: 17, top: 17),
               ),
               validator: (value) {
                 if (value!.isEmpty) {
@@ -183,8 +183,8 @@ class _SaleOrderFieldsState extends State<SaleOrderFields> {
               listPadding: ListPadding(top: 20),
               enableSearch: true,
               searchDecoration: const InputDecoration(
-                hintText: "Serach",
-                contentPadding: EdgeInsets.only(top: 10, left: 10),
+                hintText: "Search",
+                contentPadding: EdgeInsets.only(right: 17, left: 17, top: 17),
               ),
               validator: (value) {
                 if (value!.isEmpty) {

@@ -42,9 +42,6 @@ class Textfield extends StatelessWidget {
         obscureText: obscureText ?? false,
         textInputAction: TextInputAction.next,
         decoration: InputDecoration(
-          // errorBorder: OutlineInputBorder(
-          //   borderSide: BorderSide.none
-          // ),
           suffixIcon: sicon,
           border: InputBorder.none,
           fillColor: Colors.white,

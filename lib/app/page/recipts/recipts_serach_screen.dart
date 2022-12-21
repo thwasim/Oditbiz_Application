@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 
-class SearchScreen extends StatefulWidget {
-  const SearchScreen({Key? key}) : super(key: key);
-
+class ReciptsSearchScreen extends StatefulWidget {
+  const ReciptsSearchScreen({Key? key}) : super(key: key);
   @override
-  State<SearchScreen> createState() => _SearchScreenState();
+  State<ReciptsSearchScreen> createState() => _ReciptsSearchScreenState();
 }
 
-class _SearchScreenState extends State<SearchScreen> {
+class _ReciptsSearchScreenState extends State<ReciptsSearchScreen> {
   TextEditingController searchController = TextEditingController();
 
   final duplicateItems = List<String>.generate(100, (i) => " $i");
@@ -81,7 +80,7 @@ class _SearchScreenState extends State<SearchScreen> {
                           ),
                           hintText: "Search Payer",
                           hintStyle: TextStyle(
-                            fontFamily: "poppins",
+                            fontFamily: "s",
                             fontSize: 14,
                             color: Color(0xFF838383),
                           ),
@@ -90,8 +89,8 @@ class _SearchScreenState extends State<SearchScreen> {
                     ),
                   ),
                   Container(
-                    height: MediaQuery.of(context).size.height * 0.053,
-                    width: MediaQuery.of(context).size.width * 0.125,
+                    height: MediaQuery.of(context).size.height * 0.047,
+                    width: MediaQuery.of(context).size.width * 0.136,
                     decoration: BoxDecoration(
                       color: const Color(0xFF680E2A),
                       borderRadius: BorderRadius.circular(5),
@@ -141,9 +140,10 @@ class _SearchScreenState extends State<SearchScreen> {
                             Text(
                               "12-12-2022",
                               style: TextStyle(
-                                  fontFamily: "poppins",
-                                  fontSize: 14,
-                                  color: Color(0xFF838383)),
+                                fontFamily: "poppins",
+                                fontSize: 14,
+                                color: Color(0xFF838383),
+                              ),
                             )
                           ],
                         ),
@@ -169,7 +169,7 @@ class _SearchScreenState extends State<SearchScreen> {
                                 fontWeight: FontWeight.bold,
                                 color: Color(0xFF680E2A),
                               ),
-                            )
+                            ),
                           ],
                         ),
                       ],
@@ -211,9 +211,7 @@ class _SearchScreenState extends State<SearchScreen> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    const SizedBox(
-                      width: 30,
-                    ),
+                    const SizedBox(width: 30),
                     const Center(
                       child: Text(
                         'Search by',

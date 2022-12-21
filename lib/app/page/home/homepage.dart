@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:oditbiz/app/page/ledger/ledger_registration.dart';
-import 'package:oditbiz/app/page/recipts/receipt_page.dart';
 
 class Homescreen extends StatefulWidget {
   const Homescreen({Key? key}) : super(key: key);
@@ -12,11 +11,9 @@ class Homescreen extends StatefulWidget {
 class _HomescreenState extends State<Homescreen> {
   TextEditingController editingController = TextEditingController();
 
-  final duplicateItems = List<String>.generate(100000, (i) => " $i");
+  final duplicateItems = List<String>.generate(1000, (i) => " $i");
 
   List items = <String>[];
-
-  bool isShowData = true;
 
   void filterSearchResults(String data) {
     if (data.isEmpty) {
@@ -75,7 +72,7 @@ class _HomescreenState extends State<Homescreen> {
             padding: const EdgeInsets.all(8.0),
             child: ElevatedButton(
               style: ElevatedButton.styleFrom(
-                primary: const Color(0xFF680E2A),
+                backgroundColor: const Color(0xFF680E2A),
               ),
               onPressed: () {
                 Navigator.of(context).push(

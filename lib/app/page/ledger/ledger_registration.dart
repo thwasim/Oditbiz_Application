@@ -41,6 +41,7 @@ class LedgerRegistration extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       backgroundColor: Colors.white,
       appBar: AppBar(
         elevation: 0,
@@ -92,8 +93,9 @@ class LedgerRegistration extends StatelessWidget {
                   listPadding: ListPadding(top: 20),
                   enableSearch: true,
                   searchDecoration: const InputDecoration(
-                    contentPadding: EdgeInsets.all(5),
                     hintText: "Search",
+                    contentPadding:
+                        EdgeInsets.only(right: 17, left: 17, top: 17),
                   ),
                   validator: (value) {
                     if (value!.isEmpty) {

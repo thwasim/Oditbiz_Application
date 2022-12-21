@@ -64,7 +64,10 @@ class _PaymentFieldState extends State<PaymentField> {
               listSpace: 20,
               listPadding: ListPadding(top: 20),
               enableSearch: true,
-              // controller: cashAcountcontroller,
+              searchDecoration: const InputDecoration(
+                hintText: "Search",
+                contentPadding: EdgeInsets.only(right: 17, left: 17, top: 17),
+              ),
               validator: (value) {
                 if (value!.isEmpty) {
                   return "Required field";
@@ -73,14 +76,14 @@ class _PaymentFieldState extends State<PaymentField> {
                 }
               },
               dropDownList: const [
-                DropDownValueModel(name: 'Cash Account', value: "value1"),
-                DropDownValueModel(name: 'Cash Account', value: "value2"),
-                DropDownValueModel(name: 'Cash Account', value: "value3"),
-                DropDownValueModel(name: 'Cash Account', value: "value4"),
-                DropDownValueModel(name: 'Cash Account', value: "value5"),
-                DropDownValueModel(name: 'Cash Account', value: "value6"),
-                DropDownValueModel(name: 'Cash Account', value: "value7"),
-                DropDownValueModel(name: 'Cash Account', value: "value8"),
+                DropDownValueModel(name: 'Cash Account', value: 0),
+                DropDownValueModel(name: 'Cash Account', value: 1),
+                DropDownValueModel(name: 'Cash Account', value: 2),
+                DropDownValueModel(name: 'Cash Account', value: 3),
+                DropDownValueModel(name: 'Cash Account', value: 4),
+                DropDownValueModel(name: 'Cash Account', value: 5),
+                DropDownValueModel(name: 'Cash Account', value: 6),
+                DropDownValueModel(name: 'Cash Account', value: 7),
               ],
               listTextStyle:
                   const TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
@@ -124,6 +127,10 @@ class _PaymentFieldState extends State<PaymentField> {
               listSpace: 20,
               listPadding: ListPadding(top: 20),
               enableSearch: true,
+              searchDecoration: const InputDecoration(
+                hintText: "Search",
+                contentPadding: EdgeInsets.only(right: 17, left: 17, top: 17),
+              ),
               validator: (value) {
                 if (value!.isEmpty) {
                   return "Required field";
@@ -132,14 +139,14 @@ class _PaymentFieldState extends State<PaymentField> {
                 }
               },
               dropDownList: const [
-                DropDownValueModel(name: 'Personal Name', value: "value1"),
-                DropDownValueModel(name: 'Personal Name', value: "value2"),
-                DropDownValueModel(name: 'Personal Name', value: "value3"),
-                DropDownValueModel(name: 'Personal Name', value: "value4"),
-                DropDownValueModel(name: 'Personal Name', value: "value5"),
-                DropDownValueModel(name: 'Personal Name', value: "value6"),
-                DropDownValueModel(name: 'Personal Name', value: "value7"),
-                DropDownValueModel(name: 'Personal Name', value: "value8"),
+                DropDownValueModel(name: 'Personal Name', value: 0),
+                DropDownValueModel(name: 'Personal Name', value: 1),
+                DropDownValueModel(name: 'Personal Name', value: 2),
+                DropDownValueModel(name: 'Personal Name', value: 3),
+                DropDownValueModel(name: 'Personal Name', value: 4),
+                DropDownValueModel(name: 'Personal Name', value: 5),
+                DropDownValueModel(name: 'Personal Name', value: 6),
+                DropDownValueModel(name: 'Personal Name', value: 7),
               ],
               listTextStyle:
                   const TextStyle(color: Color.fromARGB(255, 0, 0, 0)),

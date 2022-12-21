@@ -50,8 +50,8 @@ class PaymentScreen extends StatelessWidget {
                       );
                     },
                     child: Container(
-                      height: MediaQuery.of(context).size.height * 0.053,
-                      width: MediaQuery.of(context).size.width * 0.125,
+                      height: MediaQuery.of(context).size.height * 0.047,
+                      width: MediaQuery.of(context).size.width * 0.136,
                       decoration: BoxDecoration(
                         color: const Color(0xFF680E2A),
                         borderRadius: BorderRadius.circular(5),

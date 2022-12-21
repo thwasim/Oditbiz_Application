@@ -70,6 +70,10 @@ class _ReceiptsFieldState extends State<ReceiptsField> {
               listSpace: 20,
               listPadding: ListPadding(top: 20),
               enableSearch: true,
+              searchDecoration: const InputDecoration(
+                hintText: "Search",
+                contentPadding: EdgeInsets.only(right: 17, left: 17, top: 17),
+              ),
               validator: (value) {
                 if (value == null) {
                   return "Required field";
@@ -132,6 +136,10 @@ class _ReceiptsFieldState extends State<ReceiptsField> {
               listSpace: 20,
               listPadding: ListPadding(top: 20),
               enableSearch: true,
+              searchDecoration: const InputDecoration(
+                hintText: "Search",
+                contentPadding: EdgeInsets.only(right: 17, left: 17, top: 17),
+              ),
               validator: (value) {
                 if (value == null) {
                   return "Required field";

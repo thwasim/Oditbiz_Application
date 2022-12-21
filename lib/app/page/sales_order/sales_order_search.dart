@@ -6,6 +6,7 @@ class SaleOrderSearchScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.white,
@@ -106,8 +107,8 @@ class SaleOrderSearchScreen extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      height: MediaQuery.of(context).size.height * 0.053,
-                      width: MediaQuery.of(context).size.width * 0.125,
+                      height: MediaQuery.of(context).size.height * 0.047,
+                      width: MediaQuery.of(context).size.width * 0.136,
                       decoration: BoxDecoration(
                         color: const Color(0xFF680E2A),
                         borderRadius: BorderRadius.circular(5),

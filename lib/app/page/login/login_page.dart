@@ -39,7 +39,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      resizeToAvoidBottomInset: true,
+      resizeToAvoidBottomInset: false,
       body: Form(
         key: formKey,
         child: Center(
@@ -70,7 +70,7 @@ class _LoginPageState extends State<LoginPage> {
                     children: [
                       Padding(
                         padding:
-                            const EdgeInsets.only(right: 17, left: 17, top: 17),
+                            const EdgeInsets.only(right: 10, left: 10, top: 15),
                         child: TextFormField(
                           validator: validation,
                           controller: usernamecontroller,
@@ -86,7 +86,7 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                       Padding(
                         padding:
-                            const EdgeInsets.only(right: 17, left: 17, top: 17),
+                            const EdgeInsets.only(right: 10, left: 10, top: 15),
                         child: TextFormField(
                           validator: validation,
                           obscureText: isHidden,
@@ -112,7 +112,7 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                       Padding(
                         padding:
-                            const EdgeInsets.only(right: 17, left: 17, top: 17),
+                            const EdgeInsets.only(right: 10, left: 10, top: 15),
                         child: DropDownTextField(
                           readOnly: true,
                           textFieldDecoration: const InputDecoration(
@@ -129,6 +129,10 @@ class _LoginPageState extends State<LoginPage> {
                           listSpace: 20,
                           listPadding: ListPadding(top: 20),
                           enableSearch: true,
+                          searchDecoration: const InputDecoration(
+                            hintText: "Search",
+                            contentPadding: EdgeInsets.only(right: 17, left: 17, top: 17),
+                          ),
                           validator: (value) {
                             if (value == null) {
                               return "Required field";
@@ -136,6 +140,7 @@ class _LoginPageState extends State<LoginPage> {
                               return null;
                             }
                           },
+                        
                           dropDownList: const [
                             DropDownValueModel(
                                 name: 'wayanad', value: "value1"),
@@ -158,8 +163,8 @@ class _LoginPageState extends State<LoginPage> {
                         height: 20,
                       ),
                       Padding(
-                        padding: const EdgeInsets.only(
-                            right: 13, left: 14, bottom: 20),
+                        padding:
+                            const EdgeInsets.only(right: 10, left: 10, top: 15),
                         child: Material(
                           color: const Color(0xFF680E2A),
                           elevation: 7,

@@ -152,7 +152,7 @@ class AddProductScreen extends StatelessWidget {
             onPressed: () {
               Navigator.of(context).push(
                 MaterialPageRoute(
-                  builder: (ctx) =>const CartScreen(),
+                  builder: (ctx) => const CartScreen(),
                 ),
               );
             },

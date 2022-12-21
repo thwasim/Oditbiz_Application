@@ -16,6 +16,7 @@ class _ReceiptScreenState extends State<ReceiptScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       backgroundColor: Colors.white,
       appBar: PreferredSize(
         preferredSize: Size(
@@ -42,7 +43,9 @@ class _ReceiptScreenState extends State<ReceiptScreen> {
                         "Receipts",
                         style: TextStyle(
                           fontFamily: "poppins",
-                            fontSize: 16, fontWeight: FontWeight.w600),
+                          fontSize: 16,
+                          fontWeight: FontWeight.w600,
+                        ),
                       ),
                     ],
                   ),
@@ -50,13 +53,13 @@ class _ReceiptScreenState extends State<ReceiptScreen> {
                     onTap: () {
                       Navigator.of(context).push(
                         MaterialPageRoute(
-                          builder: (ctx) => const SearchScreen(),
+                          builder: (ctx) => const ReciptsSearchScreen(),
                         ),
                       );
                     },
                     child: Container(
-                      height: MediaQuery.of(context).size.height * 0.053,
-                      width: MediaQuery.of(context).size.width * 0.125,
+                      height: MediaQuery.of(context).size.height * 0.047,
+                      width: MediaQuery.of(context).size.width * 0.136,
                       decoration: BoxDecoration(
                         color: const Color(0xFF680E2A),
                         borderRadius: BorderRadius.circular(5),
